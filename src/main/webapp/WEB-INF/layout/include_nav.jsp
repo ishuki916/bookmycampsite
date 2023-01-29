@@ -19,33 +19,17 @@
 					class="nav-link">Home</a></li>
 				<li class="nav-item"><a href="${contextRoot}/selectAll"
 					class="nav-link">Campsite</a></li>
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" role="button"
-					data-toggle="dropdown" aria-expanded="false">Rent</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="${contextRoot}/rental/van"
-							style="font-size: small">Campervan</a> <a class="dropdown-item"
-							href="${contextRoot}/rental/tent" style="font-size: small">Tent</a>
-					</div></li>
+				<li class="nav-item active"><a href=""
+					class="nav-link">Rent</a>
+					</li>
 
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" role="button"
-					data-toggle="dropdown" aria-expanded="false">Pair</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="${contextRoot}/userLoginCheck"
-							style="font-size: small">Match Itinerary</a> <a class="dropdown-item"
-							href="${contextRoot}/userPaidOrder" style="font-size: small">Pair Order</a>
-				</div></li>
+				<li class="nav-item active"><a href=""
+					class="nav-link">Pair</a>
+					</li>
 					
-                <li class="nav-item dropdown">
-                <a	class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" 
-                    aria-expanded="false">Forum</a>
-				<div class="dropdown-menu">
-				 <a class="dropdown-item" href="${contextRoot}/blog/selectAllPost"
-					style="font-size: small">Blog</a>
-				 <a class="dropdown-item" href="${contextRoot}/blog/blogForYou"
-				    style="font-size: small">My Blog</a>
-				</div>
+                <li class="nav-item active"><a href=""
+					class="nav-link">Forum</a>
+				
 				</li>
 					
 				<c:if test="${loginUser == null}">
@@ -69,10 +53,7 @@
 							id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 							aria-expanded="false">${loginUser.username}</button>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-							<a class="dropdown-item" type="button"
-								href="${contextRoot}/users/edit">editInfo</a>
-							<a class="dropdown-item" type="button"
-								href="${contextRoot}/admin/chat">chat</a>
+							
 							<c:if test="${loginUser.lv == 'admin'}">
 							<a class="dropdown-item" type="button"
 								href="${contextRoot}/admin/top">admin</a>
@@ -109,7 +90,6 @@ function cartItemCaculate(){
 
 cartItemCaculate();
 
-//計算時間，時間到了的話要清理bookingCampsite沒付款的筆數
 
 
 

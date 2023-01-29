@@ -17,9 +17,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
-import com.muwei.demo.model.Campsite;
-import com.muwei.demo.service.MyCampsiteService;
+import com.muwei.demo.camp.model.Campsite;
+import com.muwei.demo.camp.service.MyCampsiteService;
 import com.muwei.demo.users.model.Users;
 import com.muwei.demo.users.model.UsersDTO;
 import com.muwei.demo.users.service.UsersService;
@@ -27,7 +26,6 @@ import com.muwei.demo.users.service.UsersService;
 @Controller
 public class UsersController {
 
-//	private emailService es;
 
 	@Autowired
 	private UsersService us;
@@ -41,7 +39,7 @@ public class UsersController {
 		return "/users/login";
 	}
 
-	// 牧葳加的...測試用!-----開始
+
 	@GetMapping("/loginPageToBook")
 	public String loginPageToBook(HttpServletRequest r,@RequestParam Integer id, Model m,@RequestParam String unitType) {
 		r.getSession().removeAttribute("userError");
@@ -50,7 +48,6 @@ public class UsersController {
 		return "/campsite/loginToBook";
 	}
 
-	// 牧葳加的...測試用!-----途中
 	@PostMapping("loginToBookPost")
 	public String userLoginToBook(@RequestParam String email, @RequestParam String pwd, @RequestParam int id,@RequestParam String unitType,
 			HttpServletRequest r, Model m) {
@@ -74,22 +71,7 @@ public class UsersController {
 
 		return "/campsite/loginToBook" ;
 	}
-	// 牧葳加的...測試用!-----結束
 
-	@GetMapping("/registerPage")
-	public String registerPage() {
-		return "/users/register";
-	}
-
-	@GetMapping("/admin/users")
-	public String usersAdminPage() {
-		return "/users/adminIndex";
-	}
-
-	@GetMapping("/admin/createUser")
-	public String usersAdminC() {
-		return "/users/createUser";
-	}
 
 	@PostMapping("login")
 	public String userLogin(@RequestParam String email, @RequestParam String pwd, HttpServletRequest r) {

@@ -23,29 +23,7 @@
           <div class="col-md-9 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>Camping <br></strong>your amazing lifestyle</h1>
              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">沐浴在大自然間，環繞在山谷間，聆聽鳥叫聲，感受陽光照射在林間的光影變化</p> 
-            <div class="block-17 my-4">
-              <form action="" method="post" class="d-block d-flex">
-                <div class="fields d-block d-flex">
-                
-                  <div class="textfield-search one-third">
-                  
-                  <input type="text" id="checkin_date" class="form-control"
-										placeholder="Choose the date 選擇日期" >
-                  	
-                  </div>
-                 
-             
-                
-                </div>
-                <input type="button" class="search-submit btn btn-primary" value="Search">  
-              </form>
-            </div>
-            <p>熱門探索標籤</p>
-            <p class="browse d-md-flex">
-            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-fork"></i>Cafe & Bar</a></span>
-            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-hotel"></i>24hr Manager</a></span> 
-            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-meeting-point"></i>Wifi</a></span> 
-            	<span class="d-flex justify-content-md-center align-items-md-	center"><a href="#"><i class="flaticon-shopping-bag"></i>Shopping</a></span>
+           
             </p>
           </div>
         </div>
