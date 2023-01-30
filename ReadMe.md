@@ -34,6 +34,7 @@
 3. 於com.muwei.demo package中BookmycampsiteApplication右鍵Run
 4. 前台首頁  [Lets Camping](http://localhost:8080/bookmycampsite/index)  (進入後請點選上方Navbar的Campsite)
 5. 後台首頁 [Lets Camping Admin](http://localhost:8080/bookmycampsite/admin/top)  (進入後請點選左方Sidebar的Campsite)
+
 **Run The Project**
 1. Open the “campsite_SQLQuery.sql” and create the database.
 2. In “application.properties”, fulfill your own PayPal Sandbox data (app and secret)
